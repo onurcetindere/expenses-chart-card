@@ -9,3 +9,5 @@ Thanks for checking out this front-end coding challenge.
 Design By Front-End-Mentor Coded By Mehmet Onur Çetindere
 
 
+TO DO:
+Find the way of correcting spacing graph and last section.

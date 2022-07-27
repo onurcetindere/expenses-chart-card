@@ -1,0 +1,133 @@
+/*-----------------
+CSS RESET SECTION
+-----------------/*
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+/* make images easier to work with */
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*-----------------
+UTILITES SECTION
+-----------------*/
+:root{
+    --clr-soft-red: hsl(10, 79%, 65%);
+    --clr-cyan: hsl(186, 34%, 60%);
+    --clr-dark-brown: hsl(25, 47%, 15%);
+    --clr-medium-brown: hsl(28, 10%, 53%);
+    --clr-cream: hsl(27, 66%, 92%);
+    --clr-very-pale-orange:hsl(33, 100%, 98%);
+    --f-size:18px;
+}
+.clr-soft-red {color:hsl(10, 79%, 65%);}
+.clr-cyan {color:hsl(186, 34%, 60%)}
+.clr-dark-brown {color:hsl(25, 47%, 15%)}
+.clr-medium-brown {color: hsl(28, 10%, 53%)}
+.clr-cream {color: hsl(27, 66%, 92%)}
+.clr-white{color:aliceblue};
+.bg-clr-very-pale-orange{ background-color:hsl(33, 100%, 98%)}
+.bg-clr-soft-red {background-color:hsl(10, 79%, 65%)}
+.bg-clr-cyan {background-color:hsl(186, 34%, 60%)}
+.bg-clr-dark-brown {background-color:hsl(25, 47%, 15%)}
+.bg-clr-medium-brown {background-color: hsl(28, 10%, 53%)}
+.bg-clr-cream {background-color: hsl(27, 66%, 92%)}
+.bg-clr-very-pale-orange{ background-color:hsl(33, 100%, 98%)}
+.bg-clr-white{
+    background-color: aliceblue;
+}
+.f-size {background-color:18px}
+.border-r{
+    border-radius:13px;
+}
+.-f-w-400{
+    font-weight: 400;
+}
+.-f-w-700{
+    font-weight: 700;
+}
+
+
+/*-----------------
+GRID,FLEX,CONTAINER,
+AND BODY UTILITY CLASSES
+-----------------*/
+
+body{
+    font-family:'DM Sans';
+    background-color: var(--clr-cream);
+}
+
+.flex{
+    display:flex;
+}
+.grid{
+    display:grid;
+}
+
+/* Container items centered, by margin 0 auto
+   pushed down with margin-top property*/
+.container{
+   
+    width:35rem;
+    position: relative;
+    margin:0 auto;
+    margin-top:2rem;
+     
+}
+.bar{
+ width:3em;
+
+}
+.line{
+    border:grey 0.5px solid;
+}
+
+
+/*-----------------
+Just For attr.
+-----------------*/
+.attr{
+    text-align: center;
+    margin-top:3rem;
+    font-size:1.3rem;
+    font-weight: 700;
+}
+ul{list-style: none;}

@@ -6,38 +6,93 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Expenses chart component</title>
+  <title>Expenses chart component</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet"> 
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
+  <div class="container bg-clr-soft-red border-r" style=" padding:1.5rem;margin-top:10rem">
+    <div class="flex deneme " style=" flex-direction:row; justify-content: space-between;">
+    <div class="amount" style="justify-self:center;">
+     <p style="padding-bottom: 0.5em; " class="f-w-400 clr-white">My balance</p>
+     <p class="f-w-700 clr-white" style="font-size:1.5rem"> $921.48</p>
+    </div>
+    <img src="/images/logo.svg" alt="">
+  </div>
+  </div>
+  <div class="container bg-clr-white border-r" style="padding:2em 2em">
+    <h2 class="f-w-700">Spending - Last 7 days</h2>
+    <ul class="flex" style="flex-direction:row;justify-content: space-between; padding-block:1em;">
+      <li>
+        <div class="bar bg-clr-soft-red" style="height:7rem;">
+          <div class="bar bg-clr-white" style="height:3rem;"></div>
+        </div>
+        <p class="day">mon</p>
+      </li>
+      <li>
+        <div class="bar bg-clr-soft-red" style="height:7rem;">
+        
+        <div class="bar bg-clr-white" style="height:2rem;"></div>
+        </div>
+        <p class="day">tue</p>
+      </li>
+      <li>
+        <div class="bar bg-clr-soft-red" style="height:7rem;">
+          <div class="bar bg-clr-white" style="height:5rem;"></div>
+        </div>
+        
+        <p class="day">wed</p>
+      </li>
+      <li>
+        <div class="bar bg-clr-soft-red" style="height:7rem;">
+          <div class="bar bg-clr-white" style="height:6rem;"></div>
+        </div>
+        
+        <p class="day">thu</p>
+      </li>
+      <li>
+        <div class="bar bg-clr-soft-red" style="height:7rem;">
+          <div class="bar bg-clr-white" style="height:5rem;"></div>
+        </div>
+        <p class="day">fri</p>
+      </li>
+      <li>
+        <div class="bar bg-clr-soft-red" style="height:7rem;">
+          <div class="bar bg-clr-white" style="height:3rem;"></div>
+        </div>
+        <p class="day">sat</p>
+      </li>
+      <li>
+        <div class="bar bg-clr-soft-red" style="height:7rem;">
+          <div class="bar bg-clr-white" style="height:1rem;"></div>
+        </div>
+        <p class="day">sun</p>
+      </li>
+    </ul>
+    <div class="line"></div>
+    <div class="flex" style=" flex-direction:row; justify-content: space-between; padding-inline:2em;padding-top:2em;">
+      <div class="amount" >
+        <p >Total this month</p>
+        <p class="f-w-700" style="font-size:2rem"> $478.33</p>
+       </div>
+       <div class="amount" style="padding-top:1.5em;" >
+        <p class="f-w-700"> +2.4%</p>
+        <p>from last month</p>
+        
+       </div>
+    </div>
   
-  <div class="attribution">
+  </div>
+ 
+
+
+  <div class="attr">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/onurcetindere">Onur Çetindere</a>.
   </div>
 </body>
 </html>
